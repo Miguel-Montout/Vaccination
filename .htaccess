@@ -1,0 +1,26 @@
+# Désactiver l'affichage des index pour tous les répertoires
+Options -Indexes
+
+<FilesMatch "^inc/">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^asset/">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^vendor/">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "^admin/">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch> 
+<Files ".htaccess">
+    Order Deny,Allow
+    Deny from all
+</Files>
